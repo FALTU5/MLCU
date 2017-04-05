@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up Form</title>
+
+<link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<form action="index.html" method="post">
+
+<h1>New User</h1>
+
+<fieldset>
+<legend><span class="number">1</span>Your basic info</legend>
+<label for="name"><strong>Name:</strong></label>
+<input type="text" id="name" name="user_name">
+<label for="empid"><strong>Employee ID:</strong></label>
+<input type="text" id="empid" name="empid">
+<label for="dep"><strong>Department:</strong></label>
+<select id="dep" name="user_dep">
+  <option value="ahs">Allied Health Science</option>
+  <option value="cs">Computer Science</option>
+  <option value="cp">Counselling Psychology</option>
+  <option value="fa">Fine Arts</option>
+   <option value="coms">Commerce Studies</option>
+    <option value="music">Music</option>
+
+</select>
+</fieldset>
+<fieldset>
+<label for="job"><strong>Job Role</strong></label>
+<select id="job" name="user_job">
+  <option value="faculty">Faculty</option>
+  <option value="hod">Head Of Department</option>
+  <option value="adm">Admission</option>
+  <option value="hr">Human Resource</option>
+
+</select>
+</fieldset>
+<button type="submit">Register</button>
+</form>
+
+</body>
+</html>
+

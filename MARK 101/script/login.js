@@ -16,9 +16,6 @@ $('input#login-submit').on('click', function login(){
             else
                 $("#msg").text(data);
 
-
-
-
         });
     }
 });

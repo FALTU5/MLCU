@@ -4,8 +4,8 @@
 Hello
 <?php
 session_start();
-echo $_SESSION['userid'];
-echo $_SESSION['usertype'];
+ include 'functions/user_access.php';
+ access($_SESSION['usertype']);
 ?>
 
 </body>
