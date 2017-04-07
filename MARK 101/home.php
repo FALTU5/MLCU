@@ -4,9 +4,17 @@
 Hello
 <?php
 session_start();
- include 'functions/user_access.php';
- access($_SESSION['usertype']);
-?>
+if(isset($_SESSION['userid']))
+{
+     include 'functions/user_access.php';
+     access($_SESSION['usertype']);
+}
+else
+{
+    header('Location:login-page.php');
+}
 
+    exit;
+ ?>
 </body>
 </html>

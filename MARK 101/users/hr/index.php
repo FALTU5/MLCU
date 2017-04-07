@@ -1,13 +1,12 @@
 <html>
-<title> Technical Admin Home</title>
+<title> HOD Home</title>
 
 <?php
 // Validate if session exist and account type is a tech admin
 
 session_start();
-if(isset($_SESSION['userid']) && isset($_SESSION['usertype']) == 'TECHNICAL ADMIN')
+if(isset($_SESSION['userid']) && isset($_SESSION['usertype']) == 'HR')
 {
-    echo session_id();
     echo $_SESSION['userid']. " Welcome";
 }
 else

@@ -19,3 +19,9 @@ $('input#login-submit').on('click', function login(){
         });
     }
 });
+
+$('input').keyup(function(){
+    var str = $(this).val();
+    str = str.replace(/\s/g,'');
+    $(this).val(str);
+});
